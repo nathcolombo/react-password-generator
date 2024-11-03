@@ -76,7 +76,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* Div para agrupar título e botão de idioma */}
       <div className="header">
         <h1>{texts[language].title}</h1>
         <button
@@ -87,10 +86,9 @@ function App() {
           }
           onClick={() => setLanguage(language === "pt" ? "en" : "pt")}
         >
-          {language === "pt" ? "🇬🇧" : "🇧🇷"}
+          {language === "pt" ? "🇧🇷" : "🇬🇧"}
         </button>
       </div>
-
       <div className="options">
         <label>
           {texts[language].length}
